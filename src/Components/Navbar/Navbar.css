@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway');
+
+/*    SIDEBAR   */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    position: fixed;
+    height : 100vh;
+    z-index : 999;
+    min-width: 200px;
+    max-width: 285px;
+    background: #222;
+    color: #fff;
+    transition: 0.3s;
+}
+#sidebar.active {
+    margin-left: -285px!important;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+}
+
+#sidebar ul.components {
+    padding: 5px 0;
+}
+#sidebar ul li a {
+    padding: 1px 33px;
+    font-size: 1em;
+    font-weight: 600;
+    display: block;
+    color: #808080;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none!important;
+}
+#sidebar ul li a:active{
+  color : white;
+}
+#content {
+    min-height: 100vh;
+    min-width : 99vw;
+    transition: all 0.3s;
+    padding-left: 285px;
+}
+hr{
+  width : 75%;
+  border : 1px solid #808080!important;
+  opacity: 0.3;
+}
+.About{
+  display: none!important;
+}
+
+@media screen and (max-width: 768px){
+    #content{
+      padding-left : 0;
+    }
+    /*#sidebar {
+        margin-left: -285px;
+    }*/
+    .sideMenuClass{
+      display: none;
+    }
+    #sidebar{
+      min-width : 100px;
+      max-width : 150px;
+      margin-left : 0;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+/*     MAIN CONTENT   */

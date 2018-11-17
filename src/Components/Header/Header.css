@@ -1,0 +1,139 @@
+.Header{
+  padding: 1% 1%!important;
+}
+.header-content{
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,.6)),url(../../assets/img/main-content.jpg) 0 -50px no-repeat;
+  background-repeat: no-repeat;
+  background-size : cover;
+  height : 55vh;
+}
+.main-img-content{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  color : white;
+  text-align : center;
+}
+.main-head-txt{
+  font-weight : 600;
+  font-size : 3em;
+}
+.main-head-para{
+  font-weight: 500;
+  font-size: 1.3em;
+  color : #909090;
+}
+.main-btn{
+   margin-top: 3%;
+   color : white;
+   border: 2px solid white!important;
+   border-radius: 30px!important;
+   background-color : inherit;
+   padding : 1.5% 5%!important;
+   font-weight: bold!important;
+}
+.main-btn:hover{
+  background-color : red;
+  transition: 0.5s;
+  border : 2px solid red!important;
+}
+.dots{
+  position: absolute;
+  top : 160%;
+  left : 64%;
+  transform: translate(-100%, -100%);
+  width : 30%;
+}
+.dot {
+  cursor : pointer;
+  height: 15px;
+  width: 15px;
+  background-color: inherit;
+  border  : 2px solid #808080;
+  border-radius: 50%;
+  margin-left  : 3%;
+  display: inline-block;
+}
+.dot .active{
+  background-color : #404040!important;
+}
+.res-header .row{
+  margin   : 0;
+  padding: 0!important;
+}
+.res-header{
+  z-index : 999;
+  background-color : #222;
+  padding: 1%;
+  display: none;
+}
+.res-header .img-fluid{
+  width : 30vw;
+  padding : 1%;
+}
+.menu-icon{
+  float : right;
+  padding: 5%;
+}
+.menu-icon-bg{
+  padding: 5%;
+  width : 3.5vw;
+  height : 0.2vh;
+  background-color:  white!important;
+  margin : 6px 0;
+}
+@media screen and (max-width : 768px){
+  .Header{
+    padding: 0%!important;
+  }
+  .header-content{
+     height : 82vh;
+  }
+  .main-img-content{
+    width : 85vw;
+    margin-top : 5%!important;
+  }
+  .main-head-txt{
+    font-size : 2em;
+  }
+  .main-head-para{
+    font-size: .9em;
+    color : white;
+    opacity: 0.7;
+  }
+  .dots{
+     margin-top: 20%;
+  }
+  .res-header{
+    display: block!important;
+    height : 10vh;
+  }
+  .res-header .row .img-fluid{
+    width : 35vw;
+  }
+  .menu-icon{
+     padding : 0!important;
+     margin-top : -10%!important;
+  }
+  .menu-icon-bg{
+      width : 5vw;
+  }
+  .main-btn{
+    margin-top : 5%;
+    padding : 3% 5%!important;
+  }
+}
+@media screen and (max-width : 1170px){
+    .Header{
+      padding: 0;
+    }
+    .main-img-content{
+      width : 90vw;
+    }
+    .menu-icon{
+       padding : 0!important;
+       margin-top : -15%;
+    }
+}
