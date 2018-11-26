@@ -17,7 +17,7 @@ class NavBar extends Component{
 
      navBar = (listName, index)=> {
        return(
-           <li key = {index}><a href={linkName}>{listName}</a><hr className={listName}/></li>
+           <li key = {index}><a href="#homeSubMenu">{listName}</a><hr className={listName}/></li>
        )
      }
      showMenu = ()=> {
